@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="War" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\hp\source\repos\Tank war simulation\Tank war simulation\War tanks.jpg"/>
+        </Grid.Background>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
@@ -26,7 +30,9 @@
             Grid.RowSpan="2"
             Grid.Column="0" 
             TextAlignment="Center"
-            FontSize="20"/>
+            FontSize="20"
+            Margin="10 10 10 10"
+            Background="White"/>
 
         <TextBlock 
             Name="TextBlock_Tank2"
@@ -34,7 +40,9 @@
             Grid.RowSpan="2"
             Grid.Column="2" 
             TextAlignment="Center"
-            FontSize="20"/>
+            FontSize="20"
+            Margin="10 10 10 10"
+            Background="White"/>
 
         <ProgressBar 
             Name="ProcBar_Tank1"
@@ -52,9 +60,10 @@
             FontSize="20"
             FontStyle="Italic"
             FontWeight="Bold"
+            
             TextAlignment="Center"
             Grid.Row="3"
-            Grid.ColumnSpan="3" />
+            Grid.ColumnSpan="3" Foreground="White" />
 
         <RichTextBox
             Name="TextBlock_Log"

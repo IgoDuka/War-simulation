@@ -27,9 +27,13 @@ namespace Tank_war_simulation
 
         public void StartBatle(object sender, EventArgs args)
         {
-            War war = new War();
-            war.Show();
-            Close();
+            if (CountTanks.Value > 0)
+            {
+                War war = new War();
+                war.Show();
+                Close();
+            }
+            else MessageBox.Show("There must be more than zero tanks!", "Warning", 0);
         }
     }
 }
